@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 import streamlit as st
 
 # Dataset-i oxuyuruq
-df = pd.read_csv('IMDB Dataset.csv')  # Faylın adını uyğun yaz
+df = pd.read_csv('IMDB_Dataset_20MB.csv')  # Faylın adını uyğun yaz
 df['sentiment'] = df['sentiment'].map({'positive': 1, 'negative': 0})
 
 # Train-test bölürük
