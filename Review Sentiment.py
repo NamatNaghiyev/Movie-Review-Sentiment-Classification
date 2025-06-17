@@ -41,14 +41,14 @@ def load_or_train_model():
 model, tfidf = load_or_train_model()
 
 # -------- Streamlit Tətbiqi --------
-st.title("🎬 Film Rəyi Təhlili - Naive Bayes Modeli ilə (Fast Version)")
+st.title("Film Rəyi Təhlili - Naive Bayes Modeli ilə (Fast Version)")
 
 st.markdown("""
 Bu tətbiqə film rəyi yazın və rəyin **müsbət** (positive) ya da **mənfi** (negative) olduğunu öyrənin.  
 Model: **Naive Bayes**, Təlim edilmiş versiya
 """)
 
-user_review = st.text_area("✍️ Film rəyi daxil edin:")
+user_review = st.text_area("Film rəyi daxil edin:")
 
 if st.button("Təhlil et"):
     if user_review.strip() == "":
